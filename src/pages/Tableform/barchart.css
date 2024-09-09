@@ -1,0 +1,63 @@
+/* Default styles for larger screens */
+.bar-main-div {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    justify-content: center;
+    height: 450px;
+    margin-left: 5%;
+    flex-grow: 1;
+}
+
+.bar-main-div .bar-chart {
+    display: flex;
+    flex-grow: 1;
+    width: 90%;
+}
+
+.bar-main-div .bar-chart .bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-items: center;
+    flex-grow: 1;
+    height: 400px;
+}
+
+/* Media query for screen widths between 1200px and 1400px */
+@media screen and (min-width: 1200px)  {
+    .bar-main-div {
+        width: 80%; /* Adjust width as needed */
+        height: 500px; /* Adjust height as needed */
+        margin-left: 10%; /* Adjust margin as needed */
+        border: 1px solid red;
+    }
+
+    .bar-main-div .bar-chart {
+        width: 90%; /* Adjust width as needed */
+        height: 500px;
+    }
+
+    .bar-main-div .bar-chart .bar {
+        width: 400px; /* Adjust width as needed */
+        height: 500px; /* Adjust height as needed */
+    }
+}
+@media screen and (min-width: 1400px)  {
+    .bar-main-div {
+        width: 90%; /* Adjust width as needed */
+        height: 500px; /* Adjust height as needed */
+        margin-left: 10%; /* Adjust margin as needed */
+        border: 1px solid red;
+    }
+
+    .bar-main-div .bar-chart {
+        width: 90%; /* Adjust width as needed */
+        height: 600px;
+    }
+
+    .bar-main-div .bar-chart .bar {
+        width: 400px; /* Adjust width as needed */
+        height: 500px; /* Adjust height as needed */
+    }
+}

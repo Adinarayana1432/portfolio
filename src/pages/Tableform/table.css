@@ -1,0 +1,196 @@
+.table-bg-container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+
+    .welcome{
+        display: flex;
+        flex-direction: row;
+        align-self: start;;
+        padding: 20px;
+        padding-left: 20%;
+        .fathima {
+            font-weight: bold;
+            margin-left: 2%;
+            font-size: 24px;
+            color:white;
+            width: 100px; 
+            height: 40px;
+            background-color: green;
+            border-radius: 5px;
+            overflow: hidden; /* Ensure content does not overflow */
+            text-align: center; /* Center text inside if needed */
+            line-height: 40px; /* Vertically center text */
+        }
+    }
+    .admit-name{
+        color: red;
+        text-align: center;
+        
+       
+    }
+    .state-selector-container {
+        display: flex;
+        justify-content: center; 
+        padding: 10px; 
+        border-radius: 5px; 
+        background-color: #f9f9f9; 
+
+        label {
+            margin-right: 10px; 
+            font-size: 20px; 
+            
+        }
+        select {
+            padding: 5px; 
+            border: 2px solid #ccc; 
+            border-radius: 4px; 
+            font-size: 16px; 
+            background-color: white; 
+            width: 300px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+       
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto; 
+        padding: 10px 20px;
+        background-color: #d61a1a;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 150px;
+        height: 40px;
+    }
+    
+    .table-form-div {
+        overflow: hidden; 
+        margin: 10px auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center; 
+        flex: 1;
+        width: 90%;
+    
+        .table-1 {
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            border: 1px solid grey;
+            width: 100%;
+          
+            border-radius: 1rem;
+        
+             /* Optional: limit the width */
+    
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensure borders between cells are combined */
+    
+        }
+        
+        thead {
+            display: flex; 
+            height: 60px; 
+            overflow-y: auto; 
+            overflow-x: hidden;
+            background-color: yellow;
+            padding: 10px;
+            font-size: 15px;
+
+            border-bottom: 1px solid #888;
+        }
+    
+        thead tr {
+            display: table; 
+            width: 100%; 
+            table-layout: fixed; 
+        }
+    
+        tbody th{
+            padding:10px 10px; 
+            text-align: center; 
+            border-top: 1px solid #ddd; 
+            border-left: 1px solid pink; 
+            box-sizing: border-box; 
+            white-space: nowrap; 
+        }
+    
+        
+        tbody {
+            display: block; 
+            height: 300px; 
+            overflow-y: auto; 
+            overflow-x: hidden; 
+        }
+    
+        tbody tr {
+            display: table; 
+            width: 100%; 
+            table-layout: fixed; 
+        }
+    
+        tbody td {
+            padding: 18px 10px; 
+            text-align: center; 
+            border-top: 1px solid #ddd; 
+            border-left: 1px solid pink; 
+            box-sizing: border-box; 
+            white-space: nowrap; 
+        }
+    
+        /* ---------Custom scrollbar ----------*/
+        tbody::-webkit-scrollbar {
+            width: 8px; 
+        }
+    
+        tbody::-webkit-scrollbar-track {
+        
+            border-radius: 1px; 
+        }
+    
+        tbody::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 1px; 
+        }
+    
+        tbody::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    
+    }
+    .bar-main-div{
+        display: flex;
+        overflow: hidden;
+        width: 90%;
+        justify-content: center;
+        height: 450px;
+        margin-left: 5%;
+        flex-grow: 1;
+        .bar-chart{
+            display: flex;
+            flex-grow: 1;
+            width: 90%;
+            .bar{
+                display: flex;
+                align-items: center;
+                width: 500px;
+                justify-items: center;
+                flex-grow: 1;
+                height: 400px;
+            
+            }
+    
+    
+        }
+    
+    }
+}

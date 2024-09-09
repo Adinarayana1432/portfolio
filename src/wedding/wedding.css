@@ -1,0 +1,347 @@
+
+
+
+.bg-image{
+    
+        background-image: url('../image/marriage2.jpg');
+        height: 100vh;
+       
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* Consider adding a background color fallback */
+        background-color: #000; /* Fallback color */
+    
+    
+    h1{
+        font-size: 3rem;
+        color: yellow;
+        text-align: center;
+        padding-top: 15rem;
+        text-wrap: wrap;
+    }
+
+}
+.section {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    margin: 10%;
+}
+
+.section-sub1 {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.image1 {
+    height: 100%;
+    width: 100%;
+}
+
+.section-sub2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Changed from 'justify-self' to 'justify-content' */
+    align-items: center;
+}
+
+.text {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding-top: 8rem;
+    font-style: italic;
+}
+
+.image2 {
+    height: 45%;
+    width: 70%;
+}
+.bg-image1{
+    
+    background-image: url('../image/insta.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-wrap: nowrap;
+    /* Consider adding a background color fallback */
+    background-color: #000; /* Fallback color */
+}
+
+.section2-div{
+
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    
+    
+        .section2-sub{
+            display: flex;
+            gap:25px;
+            margin:5% ;
+          
+            
+               .red{
+                height:50%;
+                width:33%;
+               }
+               .red2{
+                height:50%;
+                width:33%;
+                align-self: center;
+               }
+        }
+
+        .section2-sub1{
+            display: flex;
+            gap:10px;
+            margin:2%;
+            
+               .blue{
+                height:50%;
+                width:33%;
+               }
+        }
+
+        .section2-sub2{
+            display: flex;
+            gap:10px;
+            margin:2%;
+            
+               .green{
+                height:50%;
+                width:33%;
+               }
+        }
+
+           .section2-sub3{
+            display: flex;
+            gap:10px;
+            margin:2%;
+            
+               .yellow{
+                height:50%;
+                width:33%;
+               }
+        }
+}
+.footer-div{
+    display: flex;
+    height: 100vh;
+    margin-top: 5%;
+     /* Center the items horizontally */
+    .footer-left{
+       display: flex;
+        height: 80%;
+       width: 100%;
+        flex-direction: column;
+        justify-content: flex-start; /* Center the text vertically */
+        align-items: flex-end;
+       .end1{
+        width: 80%;
+        height: 80%;
+    
+       
+       }
+
+    }
+    .footer-right{
+         /* Set flex to 1 to take up the full width */
+        display: flex;
+        height: 80%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center; /* Center the text vertically */
+        align-items: flex-start; /* Align the text to the right */
+      /* Adjust font size for smaller screens */
+      .end2{
+        width: 80%;
+        height: 80%;
+       }
+    }
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+
+    font-size: 50px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+/* Mobile View Responsive */
+@media (max-width: 768px) {
+    .section {
+        margin: 5%;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .section-sub1, .section-sub2 {
+        width: 100%; /* Full width for each section on mobile */
+    }
+
+    .text {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        padding-top: 4rem; /* Reduce padding on smaller screens */
+    }
+
+    .image2 {
+        height: 50%; /* Adjust image height for smaller screens */
+        width: 80%; /* Adjust image width for smaller screens */
+    }
+    .section2-div{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap:10px;
+        margin:2%;
+        
+       .section2-sub{
+        display: flex;
+        flex-direction: row;
+        gap:3px;
+        margin:2%;
+            
+               .red{
+                height:33%;
+                width:33%;
+               }
+            }
+            .section2-sub1{
+                display: flex;
+                flex-direction: row;
+                gap:3px;
+                margin:2%;
+                    
+                       .red{
+                        height:33%;
+                        width:33%;
+                       }
+                    }
+                    .section2-sub2{
+                        display: flex;
+                        flex-direction: row;
+                        gap:3px;
+                        margin:2%;
+                            
+                               .red{
+                                height:33%;
+                                width:33%;
+                               }
+                            }
+                            .section2-sub3{
+                                display: flex;
+                                flex-direction: row;
+                                gap:3px;
+                                margin:2%;
+                                    
+                                       .red{
+                                        height:33%;
+                                        width:33%;
+                                       }
+                                    }
+           
+    }
+    .footer-div{
+        display: flex;
+        height: 100vh;
+        margin: 4%;
+         /* Center the items horizontally */
+        .footer-left{
+           display: flex;
+            height: 80%;
+           width: 80%;
+            flex-direction: column;
+            justify-content: flex-start; /* Center the text vertically */
+            align-items: flex-end;
+           .end1{
+            width: 80%;
+            height: 80%;
+        
+           
+           }
+    
+        }
+        .footer-right{
+             /* Set flex to 1 to take up the full width */
+            display: flex;
+            height: 80%;
+            width: 80%;
+            flex-direction: column;
+            justify-content: center; /* Center the text vertically */
+            align-items: flex-start; /* Align the text to the right */
+          /* Adjust font size for smaller screens */
+          .end2{
+            width: 80%;
+            height: 80%;
+           }
+        }
+    }
+    .whatsapp_float{
+        width: 30px;
+        height: 30px;
+        bottom: 30px;
+        right: 40px;
+        font-size: 30px;
+    }
+    
+   
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 1.2rem; /* Further reduce font size on very small screens */
+        padding-top: 2rem; /* Further reduce padding on very small screens */
+    }
+
+    .image2 {
+        height: 60%; /* Further adjust image height */
+        width: 90%; /* Further adjust image width */
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 4%;
+         /* Center the items horizontally */
+          
+        .footer-left{
+            align-items: flex-center; /* Align the text to the left */
+            
+            .end1{
+                width: 100%;
+                height: 100%;
+ 
+            }
+        }
+         
+        .footer-right{
+            align-items: flex-start; /* Align the text to the left */
+            .end2{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+
+
+

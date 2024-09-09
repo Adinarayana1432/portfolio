@@ -1,0 +1,231 @@
+/* Dummy.css (assuming this is your main CSS file) */
+
+/* Reset styles */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to right,#092D5E,#152D43,#0B496F,#13B0B0);
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* Adjust text color as needed */
+  text-decoration: none; /* Remove underline from logo */
+  
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding-left:25%;
+}
+
+.nav-item {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-direction: column;
+}
+
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: white; /* Adjust link color */
+  font-size: 1rem;
+  margin-left: 0.5rem; /* Add space between icon and text */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* Move hamburger icon to the right */
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+.all-icons{
+  color:white;
+  font-size: 25px;
+}
+.dicon{
+  font-size: 18px;
+}
+.admit-btn {
+  background-image: linear-gradient(#1CD8D2, #93EDC7);
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color:black; /* Text color */
+  border: none; /* Remove border */
+  margin-left: 2rem; /* Adjust margin */
+  cursor: pointer;
+}
+
+.otr-btn {
+  width: 100px;
+  height: 40px;
+  color: #000C40;
+  font-weight: bold;
+  border-radius: 10px;
+  background-image: linear-gradient(#EFEFBB, #D4D3DD);
+  border: none; /* Remove border */
+  margin-left: 5%; /* Adjust margin */
+  cursor: pointer;
+}
+
+.icon-btn {
+ 
+  margin-left: 3%; 
+}
+
+.icon {
+  font-size: 40px; /* Adjust icon size */
+  color: white;
+  margin-right: 0.5rem; /* Add space between icon and text */
+}
+
+
+
+@media (max-width: 578px) {
+  .nav-menu {
+    display: none;
+    
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    top: 5rem; /* Adjust top spacing */
+    right: 0;
+    background: red;
+    border-top: 1px solid #ccc;
+  }
+ 
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: -1px; /* Move hamburger icon to the right */
+    
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .nav-link {
+    display: flex;
+    text-decoration: none;
+    color:white; /* Adjust link color */
+    font-size: 1rem;
+    
+    margin-right: 120%; /* Add space between icon and text */
+  }
+  .all-icons{
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* CSS rules for devices with a width less than 768px */
+  .navbar {
+   display: flex;/* Adjust background color */
+   flex-direction: row;
+    /* Adjust alignment */
+   grid-auto-flow: row;
+   width: 100%;
+
+   .nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white; /* Adjust text color as needed */
+    text-decoration: none; /* Remove underline from logo */
+    
+  }
+  .admit-btn {
+    background-image: linear-gradient(#1CD8D2, #93EDC7);
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color:black; /* Text color */
+    border: none; /* Remove border */
+    /* Adjust margin */
+    cursor: pointer;
+    display: grid;
+    
+  }
+  .otr-btn {
+    width: 70px;
+    height: 25px;
+    color: #000C40;
+    font-weight: bold;
+    border-radius: 6px;
+    background-image: linear-gradient(#EFEFBB, #D4D3DD);
+    border: none; /* Remove border */
+    /* Adjust margin */
+    cursor: pointer;
+  }
+  .all-icons{
+    color:white;
+    font-size:10px;
+  }
+  .nav-link {
+    display: flex;
+    text-decoration: none;
+    color: white; /* Adjust link color */
+    font-size:10px;
+     /* Add space between icon and text */
+  }
+  }
+}
