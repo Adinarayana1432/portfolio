@@ -1,11 +1,12 @@
-import React from 'react'
-import WeddingForm from './myportfolio/portfolio'
+import React from 'react';
+import Wedding from './wedding/wedding';
+
 function App() {
   return (
     <div>
-      <WeddingForm/>
+      <Wedding />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
